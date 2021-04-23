@@ -1,1 +1,1 @@
-console.log("Welcome to Jsnkins Running on Node JS App");
+console.log("Welcome to Jenkins Running on Node JS App");
