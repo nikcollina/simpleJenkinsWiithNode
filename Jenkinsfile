@@ -1,4 +1,4 @@
-Pipeline {
+pipeline {
 	agent any
 	stages{
 		stage("Check Node Version"){
