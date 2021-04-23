@@ -1,26 +1,26 @@
 pipeline {
 	agent any
-	tools {node js "MyNode"}
-	stages{
+	tools {nodejs "MyNode"}		
+	stages {
 		stage("Check Node Version"){
 			steps {
-				sh "node --version"
+			sh "node --version"
 			}
-		}	
-		stage("Install Dependencies"){
+		}
+		stage("install dependencies"){
 			steps {
-				sh "node --version"
-				sh "nom install"
+			sh "npm --version"
+			sh "npm install"
 			}
 		}
 		stage("Test"){
 			steps {
-				sh "node app.js"
-			}
+			sh "node app.js"
 		}
-		stage("Release the Version"){
+		}
+		stage("Release the version"){
 			steps {
-				echo "Release the Version"
+			echo "Release the Version"
 			}
 		}
 	}
